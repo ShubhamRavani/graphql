@@ -19,9 +19,19 @@ const Index = (repositories: repositories) => {
   if (session) {
     return (
       <>
-        <h2>Welcome {name}</h2>
-        <button onClick={() => signOut()}>Sign out</button>
-        <Link href={`${router.asPath}/new`}>
+        <h2 className="mt-4 text-4xl font-bold text-center text-white">
+          Welcome {name}
+        </h2>
+        <button
+          className="ml-5 mt-2 bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
+          onClick={() => signOut()}
+        >
+          Sign out
+        </button>
+        <Link
+          href={`${router.asPath}/new`}
+          className="ml-4 mt-2 bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
+        >
           <button>Create New Repo</button>
         </Link>
         <br />

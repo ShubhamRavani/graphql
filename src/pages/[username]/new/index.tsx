@@ -26,20 +26,29 @@ const Index = () => {
   }
 
   return (
-    <div>
+    <div className="ml-5 mt-10 bg-gradient-to-br">
       <form
         onSubmit={(event) => {
           handleSubmit(event);
         }}
       >
-        <label htmlFor="name">Name:</label>
-        <textarea id="name" name="Name" ref={nameRef} required />
+        <label htmlFor="name" className="text-lg text-white">
+          Name:
+        </label>
+        <textarea
+          id="name"
+          name="Name"
+          className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          ref={nameRef}
+          required
+        />
         <br />
 
         <label htmlFor="description">Description:</label>
         <textarea
           id="description"
           name="description"
+          className="border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           ref={descRef}
           required
         ></textarea>

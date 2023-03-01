@@ -8,8 +8,7 @@ import { RepoData } from "@/types/types";
 const Index = ({ RepoDetails }: RepoData) => {
   return (
     <>
-      <div>
-        {" "}
+      <div className="ml-5">
         <DetailsRepo props={RepoDetails} />
       </div>
     </>

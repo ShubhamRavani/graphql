@@ -31,11 +31,11 @@
   --tile-border: conic-gradient(
     #ffffff80,
     #ffffff40,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
+    #ffffff30,
+    #ffffff20,
+    #ffffff10,
+    #ffffff10,
+    #ffffff80
   );
 
   --callout-rgb: 238, 240, 241;

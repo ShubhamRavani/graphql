@@ -58,6 +58,7 @@ const DetailsRepo = ({ props }: detailedrepoProps) => {
       <p>{props.licenseInfo?.nickname}</p>
 
       <form
+        className="ml-5 mt-10"
         onSubmit={(event) => {
           updateHandler(event);
         }}

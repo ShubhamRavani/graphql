@@ -20,8 +20,7 @@ const SearchRepo = () => {
   };
 
   return (
-    <div>
-      {" "}
+    <div className="ml-5 justify-center">
       <form
         onSubmit={(event) => {
           handleSearch(event);
