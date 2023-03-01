@@ -25,7 +25,6 @@ const Repository = ({ repo }: repoProps) => {
       <>
         <span style={{ fontWeight: "bold" }}>{repo.name}</span>
         <span style={{ marginLeft: "10px" }}>
-          {" "}
           <button onClick={handleButtonClick}>Go to Repo</button>
         </span>
       </>

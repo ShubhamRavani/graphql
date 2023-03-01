@@ -76,13 +76,23 @@ const DetailsRepo = ({ props }: detailedrepoProps) => {
         ></textarea>
         <br />
 
-        <button type="submit">Update Repo</button>
+        <button
+          type="submit"
+          className="bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
+        >
+          Update Repository
+        </button>
       </form>
 
       <br />
       <br />
       <br />
-      <button onClick={deleteHandler}>delete</button>
+      <button
+        className="bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded"
+        onClick={deleteHandler}
+      >
+        Delete Repository
+      </button>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Head from "next/head";
 import RedirectUser from "@/components/RedirectUser";
 import { useSession, signIn } from "next-auth/react";
 import Image from "next/image";
-import imgpath from "../../public/astronaut.svg";
+import imgpath from "../../public/git.jpg";
 
 export default function Home() {
   const { data: session } = useSession();
@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-center text-white">
             Welcome to Graphql
           </h1>
-          <p className="text-lg text-center text-white">
+          <p className="text-lg text-center text-white justify-start">
             The new way to create, read, update, and delete your repositories.
           </p>
           <button
@@ -33,8 +33,14 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex justify-center items-center flex-shrink-0 w-full lg:w-auto">
-          <Image src={imgpath} width={500} height={500} alt="Github" />
+        <div className="ml-10 flex justify-center items-center flex-shrink-0 w-full lg:w-auto">
+          <Image
+            src={imgpath}
+            width={600}
+            height={700}
+            className="rounded-full"
+            alt="Github"
+          />
         </div>
       </div>
     </>
